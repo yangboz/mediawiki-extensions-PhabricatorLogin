@@ -21,10 +21,10 @@ See https://github.com/yangboz/mediawiki-extensions-PhabricatorLogin
 References
 =======
 
-Google API PHP Client
-==
 This Extension uses the Google API PHP Client, a free software licensed under Apacha 2.0:
+
 https://github.com/google/google-api-php-client
+
 https://github.com/google/google-api-php-client/blob/master/LICENSE
 
 https://secure.phabricator.com/book/phabcontrib/article/using_oauthserver/
