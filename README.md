@@ -1,12 +1,24 @@
-# mediawiki-extensions-PhabricatorLogin
-OAuth2.0 based MediaWiki extension PhabricatorLogin
+GoogleLogin MediaWiki Extension
+=====================
 
-## References
+This Extension provides a Google Login Special page to login with a Google account to a
+the MediaWiki User account.
 
-https://oauth.net/2/
+Requirements
+==
+* MediaWiki Version 1.28+
+* MySQL (sorry, no PostgreSQL or SQLite support for now)
+* PHP 5.5+
+* Google Developer Account with Google+ API access
+* Google+ API access
+* API Credentials for Webapplication (Client ID and Client Secret)
 
-https://github.com/wikimedia/mediawiki-extensions-GoogleLogin
+Installation and Configuration
+==
+See https://www.mediawiki.org/wiki/Extension:GoogleLogin
 
-https://secure.phabricator.com/book/phabcontrib/article/using_oauthserver/
-
-http://blog.soton.ac.uk/webteam/2010/04/13/254/
+Google API PHP Client
+==
+This Extension uses the Google API PHP Client, a free software licensed under Apacha 2.0:
+https://github.com/google/google-api-php-client
+https://github.com/google/google-api-php-client/blob/master/LICENSE
