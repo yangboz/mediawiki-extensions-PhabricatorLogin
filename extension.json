@@ -1,7 +1,7 @@
 {
-	"name": "GoogleLogin",
-	"version": "0.4.0",
-	"author": "Florian Schmidt",
+	"name": "PhabricatorLogin",
+	"version": "0.0.1",
+	"author": "yangboz",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleLogin",
 	"descriptionmsg": "googlelogin-desc-authmanager",
 	"license-name": "MIT",
