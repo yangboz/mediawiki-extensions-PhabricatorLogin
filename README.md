@@ -55,9 +55,14 @@ You receive the following JSON response, which indicates you are not authorized 
 
 In order to access the protected resource, you must first request an access token via the OAuth handshake. Request OAuth authorization:
 
+Code:
+
 ```sh
-curl -X POST -vu clientapp:123456 http://localhost:8080/oauth/token -H "Accept: application/json" -d "password=spring&username=roy&grant_type=password&scope=read%20write&client_secret=123456&client_id=clientapp"
+curl -X POST http://127.0.0.1:86/oauthserver/auth/ -H "Accept: application/json" -d "client_id=PHID-OASC-nzslouj4t6ktbbqhxmeq&response_type=code&redirect_uri=http://127.0.0.1/Special:OAuth2Client/callback"
 ```
+
+Token:
+
 
 A successful authorization results in the following JSON response:
 
