@@ -63,6 +63,10 @@ curl -X POST http://127.0.0.1:86/oauthserver/auth/ -H "Accept: application/json"
 
 Token:
 
+```sh
+curl -X POST http://127.0.0.1:86/oauthserver/auth/ -H "Accept: application/json" -d "client_id=PHID-OASC-nzslouj4t6ktbbqhxmeq&client_secret=tst35gndx2ifzuiz5hwsvitaxuudwvhl&code=YOURCODE&grant_type=token&redirect_uri=http://127.0.0.1/Special:OAuth2Client/callback"
+```
+
 
 A successful authorization results in the following JSON response:
 
@@ -94,6 +98,6 @@ If the request is successful, you will see the following JSON response:
 After the specified time period, the `access_token` will expire. Use the `refresh_token` that was returned in the original OAuth authorization to retrieve a new `access_token`:
 
 ```sh
-curl -X POST -vu clientapp:123456 http://localhost:8080/oauth/token -H "Accept: application/json" -d "grant_type=refresh_token&refresh_token=f554d386-0b0a-461b-bdb2-292831cecd57&client_secret=123456&client_id=clientapp"
+curl -X POST -vu PHID-OASC-nzslouj4t6ktbbqhxmeq:tst35gndx2ifzuiz5hwsvitaxuudwvhl http://localhost:8080/oauth/token -H "Accept: application/json" -d "grant_type=refresh_token&refresh_token=f554d386-0b0a-461b-bdb2-292831cecd57&client_secret=123456&client_id=clientapp"
 ```
 More: https://github.com/royclarkson/spring-rest-service-oauth
