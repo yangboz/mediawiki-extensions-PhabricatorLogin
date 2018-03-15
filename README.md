@@ -33,21 +33,23 @@ https://upload.wikimedia.org/wikipedia/commons/4/49/Wikimania_2011-_A_brief_intr
 
 http://blog.soton.ac.uk/webteam/2010/04/13/254/
 
+https://secure.phabricator.com/book/phabcontrib/article/using_oauthserver/
+
 Usage
 ==
 
-Test the `greeting` endpoint:
+Test the `Phabricator.OAuthServer` endpoint:
 
 ```sh
-curl http://localhost:8080/greeting
+curl http://127.0.0.1:86/oauthserver/auth/
 ```
 
 You receive the following JSON response, which indicates you are not authorized to access the resource:
 
 ```json
 {
-  "error": "unauthorized",
-  "error_description": "An Authentication object was not found in the SecurityContext"
+  "error": "OAuth: Malformed Request",
+  "error_description": "Required parameter client_id was not present in the request.OAuth Error Code: invalid_request"
 }
 ```
 
