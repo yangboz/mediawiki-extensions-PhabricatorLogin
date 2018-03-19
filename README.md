@@ -83,15 +83,31 @@ A successful authorization results in the following JSON response:
 Use the `access_token` returned in the previous request to make the authorized request to the protected endpoint:
 
 ```sh
-curl http://localhost:8080/greeting -H "Authorization: Bearer ff16372e-38a7-4e29-88c2-1fb92897f558"
+http://127.0.0.1:86/api/user.whoami?access_token=mki6bdttynqyyauuq7xpmqjnmey52v7i
 ```
 
 If the request is successful, you will see the following JSON response:
 
 ```json
 {
-  "id": 1,
-  "content": "Hello, Roy!"
+    "result": {
+        "phid": "PHID-USER-pt6wom54ozlddkp3kus6",
+        "userName": "user",
+        "realName": "FirstName LastName",
+        "image": "http://127.0.0.1:86/file/data/okjea2eoycua4i7a3n46/PHID-FILE-wqlcx6jjdh5l6jseb4dy/alphanumeric_aleo-white_U.png-_3f674d-255%2C255%2C255%2C0.7.png",
+        "uri": "http://127.0.0.1:86/p/user/",
+        "roles": [
+            "admin",
+            "verified",
+            "approved",
+            "activated"
+        ]
+        ,
+        "primaryEmail": "user@example.com"
+    }
+    ,
+    "error_code": null,
+    "error_info": null
 }
 ```
 
