@@ -23,6 +23,8 @@ References
 
 This Extension uses the Google API PHP Client, a free software licensed under Apacha 2.0:
 
+https://github.com/wikimedia/mediawiki-extensions-GoogleLogin
+
 https://github.com/google/google-api-php-client
 
 https://github.com/google/google-api-php-client/blob/master/LICENSE
