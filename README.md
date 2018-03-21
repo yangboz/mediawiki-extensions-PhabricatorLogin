@@ -37,6 +37,8 @@ http://blog.soton.ac.uk/webteam/2010/04/13/254/
 
 https://secure.phabricator.com/book/phabcontrib/article/using_oauthserver/
 
+https://www.mediawiki.org/wiki/Extension:OAuth2_Client
+
 Usage
 ==
 
